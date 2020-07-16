@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { Component } from "react";
 
-const Hijo = (props) => {
+class Hijo extends React.Component {
+  render() {
     return (
-        <div className="alert alert-success">
-            <h4>Hijo</h4>
-            <button className="btn btn-info">¡Dar click aquí!</button>
-        </div>
+      <div className="alert alert-success">
+        <h4>Hijo</h4>
+        <button className="btn btn-info" onClick={this.props.function}>
+          ¡Dar click aquí!
+        </button>
+      </div>
     );
-};
+  }
+}
 
 export default Hijo;
